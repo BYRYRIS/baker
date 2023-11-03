@@ -4,38 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <header>
       <nav>
-        <a href="#"><img src="./images/logo.svg" alt="shop bakery logo" /></a>
-        <ul>
-          <li><a href="#">Франшизаа</a></li>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+        <a href="/"><img src="./images/logo.svg" alt="логотип" /></a>
+        <ul class="nav-link">
+          <li><a href="#traditions-section">Наші традиції</a></li>
+          <li><a href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a href="#format-section">Формати</a></li>
+          <li><a href="#contacts-section">Контакти</a></li>
         </ul>
-        <button type="button">Замовити дзвінок</button>
+        <button class="button" type="button">Замовити дзвінок</button>
       </nav>
     </header>
     <main>
       <section>
-        <h1>Сучасна пекарняя</h1>
+        <h1 class="hero-title"><span class="accident">Сучасна</span> пекарняя</h1>
       </section>
-      <section>
-        <ul>
+      <section id="traditions-section">
+        <ul class="features">
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
         </ul>
         <h2>Новий формат традицій</h2>
         <p>
-          <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
+          <span class="accident">shop bakery</span> — це пекарня, яка взяла все найкраще, і
           зберегла смак традиційної випічки та натуральність інгредієнтів.
         </p>
         <p>
-          Ми працюємо як найвідоміші мережі—
-          <span>5 хвилин і замовлення готове. </span>
+          Ми працюємо як найвідоміші мережі —
+          <span class="accident">5 хвилин і замовлення готове. </span>
           А ще у наших пекарень стильний дизайн та висока якість обслуговування!
         </p>
         <img
@@ -43,8 +44,8 @@
           alt="Чоловiк дивиться на хлiб та посмiхаэться"
         />
       </section>
-      <section>
-        <h2>Наші найкращі шеф -кухарі</h2>
+      <section id="chefs-section">
+        <h2>Наші найкращі <span class="accident">шеф-кухарі</span></h2>
         <ul>
           <li>
             <article>
@@ -67,53 +68,69 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="format-section">
         <h2>Формати</h2>
         <ul>
           <li>
-            <h1>Walrus</h1>
-            <p>
-              Площа: до 120 м2 Меню: розширене меню Штат: 2 продавці-касири, 2
-              пекарі, 2 помічники пекаря, 2 офіціанти-різнороби Посадкові місця:
-              є
-            </p>
+            <article>
+              <h2 class="format-text">Walrus</h2>
+              <p class="format-text">
+                Площа: до 120 м2 Меню: розширене меню Штат: 2 продавці-касири, 2
+                пекарі, 2 помічники пекаря, 2 офіціанти-різнороби Посадкові
+                місця: є
+              </p>
+            </article>
           </li>
           <li>
-            <h1>Horseshoe</h1>
-            <p>
-              Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
-              продавці-касири, 2 пекарі, 1 помічник пекаря Посадкові місця:
-              відсутні
-            </p>
+            <article class="format-text">
+              <h2 class="format-text">Horseshoe</h2>
+              <p class="format-text">
+                Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
+                продавці-касири, 2 пекарі, 1 помічник пекаря Посадкові місця:
+                відсутні
+              </p>
+            </article>
           </li>
           <li>
-            <h1>Handlebar</h1>
-            <p>
-              Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1
-              продавець, 1 пекар, 1 помічник пекаря Посадкові місця: відсутні
-            </p>
+            <article class="format-text">
+              <h2 class="format-text">Handlebar</h2>
+              <p class="format-text">
+                Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1
+                продавець, 1 пекар, 1 помічник пекаря Посадкові місця: відсутні
+              </p>
+            </article>
           </li>
         </ul>
       </section>
-      <section>
+      <section id="contacts-section">
         <h2>Приєднуйся до мережі пекарень</h2>
-        <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-        <form action="" method="get">
-          <input type="text" placeholder="Ім’я" name="name" id="" />
-          <input type="text" placeholder="Телефон" name="phonenumber" id="" />
+        <p class="contacts-p">Заповни форму, щоб ми звʼязались з тобою!</p>
+        <form class="form" method="get">
+          <input type="text" placeholder="Ім’я" name="name" />
+          <input type="text" placeholder="Телефон" name="phonenumber" />
           <input
             type="text"
             placeholder="Електронна пошта"
             name="email"
-            id=""
           />
+          <button class="button" type="submit">Замовити дзвінок</button>
+          <p>Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</p>
         </form>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2sSichovykh%20Striltsiv%20St%2C%2054%2C%20Kyiv%2C%2002000!5e0!3m2!1sen!2sua!4v1699004934089!5m2!1sen!2sua"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
     <footer>
       <nav>
         <a href="#"><img src="./images/logo.svg" alt="shop bakery logo" /></a>
-        <ul>
+        <ul class="nav-link">
           <li><a href="#">Франшиза</a></li>
           <li><a href="#">Наші традиції</a></li>
           <li><a href="#">Формати</a></li>
@@ -134,9 +151,11 @@
             </li>
           </ul>
         </address>
+        <!-- facebook link -->
+        <!-- instagram link -->
         <ul>
           <li><a href="#">Політика конфіденційності</a></li>
-          <li>© 2022 Дані захищені</li>
+          <li class="copy">&copy; 2022 Дані захищені</li>
         </ul>
       </nav>
     </footer>

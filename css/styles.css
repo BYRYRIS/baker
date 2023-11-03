@@ -1,0 +1,90 @@
+:root {
+    --main-color: #31261A;
+    --brand-color-light: #819B57;
+    --brand-color-dark: #465929;
+    --text-color: #FAF4EA;
+    --form-color: #A18268;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none
+}
+
+body {
+    color: var(--main-color);
+}
+
+.nav-link li a{
+    color: var(--text-color);
+}
+
+ .nav-link li a:hover{
+    color: var(--brand-color-light);
+}
+
+.button {
+    width: 238px;
+    height: 59px;
+    padding: 16px, 32px, 16px, 32px;
+    border-radius: 8px;
+    border: 2px solid var(--brand-color-light);
+    gap: 10px;
+    color: var(--text-color);
+    background-color: var(--brand-color-light);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--brand-color-dark);
+    background-color: transparent;
+}
+
+.hero-title {
+    color: var(--text-color);
+}
+
+.hero-title .accident{
+    color: var(--brand-color-light);
+}
+
+.accident {
+    color: var(--brand-color-light);
+}
+
+h2 .accident {
+    color: var(--brand-color-dark);
+}
+
+.features {
+    background-color: var(--brand-color-light);
+    color: var(--text-color);
+}
+
+.format-text {
+    color: var(--text-color);
+}
+
+.contacts-p {
+    color: var(--brand-color-dark);
+}
+
+.form input::placeholder {
+    color: var(--form-color);
+}
+
+.form input {
+    width: 605px;
+    height: 55px;
+    border-radius: 17px;
+    border: 2px solid var(--form-color);
+}
+
+.copy {
+    color: var(--form-color);
+}
