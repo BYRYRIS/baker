@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="flex-container-nav">
           <nav class="flex-nav">
@@ -19,7 +19,9 @@
               <li><a href="#contacts-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button order-call" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
@@ -45,7 +47,10 @@
         <div class="container">
           <div class="traditions-flex">
             <div class="traditions-content">
-              <h2 class="traditions-title">Новий формат традицій</h2>
+              <h2 class="traditions-title">
+                Новий формат <br />
+                традицій
+              </h2>
               <p class="traditions-text">
                 <span class="traditions-accident uppercase">shop bakery</span> —
                 це пекарня, яка взяла все найкраще, і зберегла смак традиційної
@@ -60,8 +65,8 @@
                 обслуговування!
               </p>
             </div>
-            <img 
-            class="traditions-image"
+            <img
+              class="traditions-image"
               src="./images/baker-man.jpg"
               alt="Чоловiк дивиться на хлiб та посмiхаэться"
             />
@@ -71,30 +76,51 @@
       <section class="section" id="chefs-section">
         <div class="container">
           <h2 class="chefs-title">
-            Наші найкращі <span class="accident">шеф-кухарі</span>
+            Наші найкращі <br />
+            <span class="accident">шеф-кухарі</span>
           </h2>
           <div class="chefs-flex">
             <ul class="chefs-list">
-              <li>
-                <article>
-                  <img class="chef-photo" src="/images/nastya-chief.jpg" alt="Nastya Chief">
-                  <h2 class="chefs-name">Настя</h2>
-                  <p>Привіт, я Настя!</p>
-                  <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
-                  <p>Я випічу для вас найсмачніщі вироби!</p>
+              <li class="chef-item">
+                <article class="chef-card">
+                  <img
+                    class="chef-photo"
+                    src="/images/nastya-chief.jpg"
+                    alt="Nastya Chief"
+                  />
+                  <div>
+                    <h2 class="chefs-name">Настя</h2>
+                    <div class="chef-text">
+                      <p>Привіт, я Настя!</p>
+                      <p>
+                        Вже 10 років, я втілюю у життя цікаві та смачні ідеї.
+                      </p>
+                      <p>Я випічу для вас найсмачніщі вироби!</p>
+                    </div>
+                  </div>
                 </article>
               </li>
-              <li>
-                <article>
-                  <img class="chef-photo" src="/images/vlad-chief.jpg" alt="Vlad Chief">
-                  <h2 class="chefs-name">Влад</h2>
-                  <p>Привіт, я Влад!</p>
-                  <p>
-                    Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша
-                    любов, з якою ми ділимось кожен раз з Вами через нашу
-                    випічку!
-                  </p>
-                  <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+              <li class="chef-item">
+                <article class="chef-card">
+                  <img
+                    class="chef-photo"
+                    src="/images/vlad-chief.jpg"
+                    alt="Vlad Chief"
+                  />
+                  <div>
+                    <h2 class="chefs-name">Влад</h2>
+                    <div class="chef-text">
+                      <p>Привіт, я Влад!</p>
+                      <p>
+                        Мій кодитерський стаж вже 18 років. <br />
+                        SHOP BEKERY - це наша любов, з якою ми ділимось кожен
+                        раз з Вами через нашу випічку!
+                      </p>
+                      <p>
+                        Я зроблю для вас унікальну начинку на будь який смак!
+                      </p>
+                    </div>
+                  </div>
                 </article>
               </li>
             </ul>
@@ -104,38 +130,50 @@
       <section class="section" id="format-section">
         <div class="container">
           <h2 class="format-title">Формати</h2>
-          <ul class="format-flex">
-            <li class="format-box">
-              <article>
-                <h2 class="format-text">Walrus</h2>
-                <p>Площа: до 120 м2</p>
-                <p>Меню: розширене меню</p>
-                <p>Штат: 2 продавці-касири, 2 пекарі, 2</p>
-                <p>помічники пекаря, 2 офіціанти-різнороби</p>
-                <p>Посадкові місця: є</p>
-              </article>
-            </li>
-            <li class="format-box">
-              <article>
-                <h2 class="format-text">Horseshoe</h2>
-                <p>Площа: до 25 м2</p>
-                <p>Меню: найпопулярніші позиції меню</p>
-                <p>Штат: 2 продавці-касири, 2 пекарі, 1</p>
-                <p>помічник пекаря</p>
-                <p>Посадкові місця: відсутні</p>
-              </article>
-            </li>
-            <li class="format-box">
-              <article>
-                <h2 class="format-text">Handlebar</h2>
-                <p>Площа: до 15 м2</p>
-                <p>Меню: найпопулярніші позиції меню</p>
-                <p>Штат: 1 продавець, 1 пекар, 1 помічник</p>
-                <p>пекаря</p>
-                <p>Посадкові місця: відсутні</p>
-              </article>
-            </li>
-          </ul>
+          <div class="formats-flex-container">
+            <button class="icon-button" type="button">
+              <svg class="icon-arrow" width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <ul class="format-flex">
+              <li class="format-box walrus">
+                <article>
+                  <h2 class="format-text">Walrus</h2>
+                  <p>Площа: до 120 м2</p>
+                  <p>Меню: розширене меню</p>
+                  <p>Штат: 2 продавці-касири, 2 пекарі, 2</p>
+                  <p>помічники пекаря, 2 офіціанти-різнороби</p>
+                  <p>ПАШОК ТЫ ТОП</p>
+                </article>
+              </li>
+              <li class="format-box horseshoe">
+                <article>
+                  <h2 class="format-text">Horseshoe</h2>
+                  <p>Площа: до 25 м2</p>
+                  <p>Меню: найпопулярніші позиції меню</p>
+                  <p>Штат: 2 продавці-касири, 2 пекарі, 1</p>
+                  <p>помічник пекаря</p>
+                  <p>Посадкові місця: відсутні</p>
+                </article>
+              </li>
+              <li class="format-box handlebar">
+                <article>
+                  <h2 class="format-text">Handlebar</h2>
+                  <p>Площа: до 15 м2</p>
+                  <p>Меню: найпопулярніші позиції меню</p>
+                  <p>Штат: 1 продавець, 1 пекар, 1 помічник</p>
+                  <p>пекаря</p>
+                  <p>Посадкові місця: відсутні</p>
+                </article>
+              </li>
+            </ul>
+            <button class="icon-button" type="button">
+              <svg class="icon-arrow next" width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <section class="section" id="contacts-section">
@@ -146,20 +184,43 @@
               <p class="contacts-p">
                 Заповни форму, щоб ми звʼязались з тобою!
               </p>
-              <form class="contact-form" method="get">
-                <input type="text" placeholder="Ім’я" name="name" />
-                <input type="text" placeholder="Телефон" name="phonenumber" />
+              <form class="modal-form" method="get">
+                <label
+                  class="modal-label visuallyhidden"
+                  for="username"
+                ></label>
                 <input
-                  class="form-last-input"
+                  class="modal-input contact-input"
+                  type="text"
+                  placeholder="Ім’я"
+                  name="username"
+                  id="username"
+                />
+                <label
+                  class="modal-label visuallyhidden"
+                  for="userphone"
+                ></label>
+                <input
+                  class="modal-input contact-input"
+                  type="text"
+                  placeholder="Телефон"
+                  name="userphone"
+                  id="userphone"
+                />
+                <label
+                  class="modal-label visuallyhidden"
+                  for="useremail"
+                ></label>
+                <input
+                  class="modal-input contact-input"
                   type="text"
                   placeholder="Електронна пошта"
-                  name="email"
+                  name="useremail"
+                  id="useremail"
                 />
-                <div class="button-container">
-                  <button class="button form-button" type="submit">
-                    Замовити дзвінок
-                  </button>
-                </div>
+                <button class="button form-button" type="submit">
+                  Замовити дзвінок
+                </button>
                 <p class="form-agree">
                   Натискаючи на кнопку я погоджуюсь з
                   <a class="form-privacy-policy" href="#"
@@ -184,35 +245,111 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="#"><img src="./images/logo.svg" alt="shop bakery logo" /></a>
-          <ul class="nav-link">
-            <li><a href="#">Франшиза</a></li>
-            <li><a href="#">Наші традиції</a></li>
-            <li><a href="#">Формати</a></li>
-            <li><a href="#">Контакти</a></li>
-          </ul>
-        </nav>
-        <address>
-          <ul class="footer-link">
-            <li><a href="tel:380960000007">+ 38 (096) 000 00 07</a></li>
-            <li>
-              <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
-            </li>
-            <li>
-              <a
-                href="https://maps.app.goo.gl/xGmiZQGsuYZssMVt7"
-                target="_blank"
-                >Україна, м. Київ, вул. Січових Стрільців 54</a
-              >
-            </li>
-            <li><a href="#">Політика конфіденційності</a></li>
-            <li class="copy">&copy; 2022 Дані захищені</li>
-            <!-- facebook link -->
-            <!-- instagram link -->
-          </ul>
-        </address>
+        <div class="footer-flex">
+          <nav class="footer-nav-flex">
+            <a class="footer-logo" href="#"
+              ><img src="./images/logo.svg" alt="shop bakery logo"
+            /></a>
+            <ul class="footer-nav">
+              <li><a href="#">Франшиза</a></li>
+              <li><a href="#">Наші традиції</a></li>
+              <li><a href="#">Формати</a></li>
+              <li><a href="#">Контакти</a></li>
+            </ul>
+          </nav>
+          <address class="footer-adress">
+            <ul class="footer-link">
+              <li><a href="tel:380960000007">+ 38 (096) 000 00 07</a></li>
+              <li>
+                <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+              </li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/xGmiZQGsuYZssMVt7"
+                  target="_blank"
+                  >Україна, м. Київ, вул. Січових Стрільців 54</a
+                >
+              </li>
+              <li>
+                <svg width="32" height="32" class="icon-facebook">
+                  <use href="/images/icons.svg#icon-facebook"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="32" height="32" class="icon-instagram">
+                  <use href="/images/icons.svg#icon-instagram"></use>
+                </svg>
+              </li>
+            </ul>
+            <div class="address-info">
+              <a href="#">Політика конфіденційності</a>
+              <p class="copy">&copy; 2022 Дані захищені</p>
+            </div>
+          </address>
+        </div>
       </div>
     </footer>
+    <div class="blackdrop ">
+      <div class="modal">
+        <button class="modal-button" type="button">x</button>
+        <h2 class="modal-title">Замовити дзвінок</h2>
+        <p class="modal-p">Заповни форму, щоб ми звʼязались з тобою!</p>
+        <form class="modal-form" method="get">
+          <label class="modal-label visuallyhidden" for="username"></label>
+          <input
+            class="modal-input"
+            type="text"
+            placeholder="Ім’я"
+            name="username"
+            id="username"
+            required
+            minlength="2"
+            maxlength="20"
+          />
+          <label class="modal-label visuallyhidden" for="userphone"></label>
+          <input
+            class="modal-input"
+            type="tel"
+            placeholder="Телефон"
+            name="userphone"
+            id="userphone"
+            required
+            pattern="\+?[0-9\s\-\(\)]+"
+            minlength="13"
+            maxlength="13"
+          />
+          <label class="modal-label visuallyhidden" for="useremail"></label>
+          <input
+            class="modal-input"
+            type="email"
+            placeholder="Електронна пошта"
+            name="useremail"
+            id="useremail"
+            required
+          />
+          <!-- <div class="checkbox-container">
+            <input
+              class="check-input visuallyhidden"
+              type="checkbox"
+              name="form-check"
+              id="form-check"
+            />
+            <label class="check-label" for="form-check"
+              >Я точно погоджуюсь з політикою конфіденційності</label
+            >
+          </div> -->
+          <button class="button form-button" type="submit">
+            Замовити дзвінок
+          </button>
+          <p class="form-agree">
+            Натискаючи на кнопку я погоджуюсь з
+            <a class="form-privacy-policy" href="#"
+              >політикою конфіденційності</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>
