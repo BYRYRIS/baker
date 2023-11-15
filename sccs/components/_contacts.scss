@@ -1,0 +1,22 @@
+.contacts-flex {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .contacts-content {
+    flex-basis: 605px;
+  }
+  
+  .contact-title {
+    margin-bottom: 16px;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: left;
+    line-height: 1.3;
+    height: 168px;
+  }
+  
+  .contacts-p {
+    margin-bottom: 42px;
+    color: var(--color-brand-dark);
+  }
