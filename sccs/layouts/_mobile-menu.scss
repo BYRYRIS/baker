@@ -1,0 +1,58 @@
+.mobile-menu {
+    &__container {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-primary-light);
+        padding: 16px 24px;
+        transition: transform 0.3s;
+        transform: translateX(0);
+    }
+
+    &__logo-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    &__button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    fill: white;
+        @media screen and (min-width: $desktop) {
+        display: none;
+        }
+    }
+
+    &__logo {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--color-primary-dark);
+        &__accident {
+           font-weight: 700; 
+        }
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link-items {
+        color: var(--color-primary-dark);
+        transition: color 0.3s;
+    }
+
+    &__link-items:hover {
+        color: var(--color-brand-normal);
+    }
+
+    &__hider {
+    transform: translateX(400%);
+    }
+}
+

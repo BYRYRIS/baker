@@ -1,13 +1,14 @@
-.contacts-flex {
+.contacts-section {
+  &__contacts-flex {
     display: flex;
     gap: 32px;
   }
   
-  .contacts-content {
+  &__contacts-content {
     flex-basis: 605px;
   }
   
-  .contact-title {
+  &__contact-title {
     margin-bottom: 16px;
     font-weight: 900;
     font-size: 60px;
@@ -16,7 +17,17 @@
     height: 168px;
   }
   
-  .contacts-p {
+  &__contacts-p {
     margin-bottom: 42px;
     color: var(--color-brand-dark);
+  }
+}
+
+
+
+  map {
+    flex-basis: 600px;
+    min-height: 600px;
+    flex-shrink: 0;
+    border-radius: 16px;
   }

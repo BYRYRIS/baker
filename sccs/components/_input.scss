@@ -1,0 +1,17 @@
+.input {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--color-secondary-dark);
+    color: var(--color-secondary-dark);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 32px;
+    padding: 16px 42px;
+    background-color: var(--color-primary-light);
+    outline: none;
+  }
+  
+  .input::placeholder {
+    color: var(--color-secondary-dark);
+  }

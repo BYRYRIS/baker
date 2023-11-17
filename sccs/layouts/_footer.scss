@@ -1,0 +1,106 @@
+.footer {
+    padding-top: 32px;
+    background-image: url("/images/footer-background.png");
+    background-color: var(--color-primary-dark);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &__::before {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: "";
+      width: 180px;
+      height: 120px;
+      background-repeat: no-repeat;
+      background-image: url("/images//bread-one.png");
+    }
+    
+    &__::after {
+      background-image: url("/images/bread-two.png");
+      position: absolute;
+      width: 380px;
+      height: 190px;
+      right: 0;
+      bottom: 0;
+      content: "";
+    }
+    
+    &__flex {
+      display: flex;
+    }
+    
+    &__nav-flex {
+      display: flex;
+      flex-basis: 50%;
+    }
+    
+    &__logo {
+      flex-grow: 1;
+    }
+    
+    &__nav {
+      flex-grow: 1;
+    }
+    
+    &__nav li a, &__link li a {
+      color: var(--color-primary-light);
+      font-size: 16px;
+      font-weight: 300;
+      transition: color 0.3s;
+    }
+    
+    &__nav li a:hover,
+    &__link li a:hover {
+      color: var(--color-brand-normal);
+    }
+    
+    &__address {
+      display: flex;
+      flex-basis: 50%;
+    }
+    
+    &__link {
+      flex-grow: 1;
+    }
+
+    &__address-info a {
+      color: var(--color-primary-light);
+      font-size: 16px;
+      font-weight: 300;
+      transition: color 0.3s;
+    }
+    
+    &__address-info a:hover {
+      color: var(--color-brand-normal)
+    }
+    
+    &__address-info {
+      flex-grow: 1;
+      
+      &__copy {
+        color: var(--color-secondary-dark);
+        font-size: 14px;
+      }
+    }
+
+  }
+  
+  
+
+  
+  
+  
+  .icon-facebook,
+  .icon-instagram {
+    fill: var(--icon-color);
+  }
+  
+  .icon-facebook:hover,
+  .icon-instagram:hover {
+    fill: var(--color-brand-normal);
+    cursor: pointer;
+  }
+  
