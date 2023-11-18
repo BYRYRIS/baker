@@ -1,4 +1,18 @@
 .input {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--color-secondary-dark);
+  color: var(--color-secondary-dark);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 16px;
+  padding: 8px 24px;
+  background-color: var(--color-primary-light);
+  outline: none;
+
+  @media screen and (min-width: $desktop) {
     width: 100%;
     border-radius: 8px;
     border: 1px solid var(--color-secondary-dark);
@@ -11,7 +25,8 @@
     background-color: var(--color-primary-light);
     outline: none;
   }
-  
-  .input::placeholder {
-    color: var(--color-secondary-dark);
-  }
+}
+
+.input::placeholder {
+  color: var(--color-secondary-dark);
+}

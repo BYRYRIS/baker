@@ -1,33 +1,91 @@
-.contacts-section {
-  &__contacts-flex {
-    display: flex;
-    gap: 32px;
-  }
+.section.contacts-section {
+  padding-bottom: 0;
   
-  &__contacts-content {
-    flex-basis: 605px;
-  }
-  
-  &__contact-title {
-    margin-bottom: 16px;
-    font-weight: 900;
-    font-size: 60px;
-    text-align: left;
-    line-height: 1.3;
-    height: 168px;
-  }
-  
-  &__contacts-p {
-    margin-bottom: 42px;
-    color: var(--color-brand-dark);
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 48px;
   }
 }
 
+.contacts-section {
+  &__flex {
+    display: block;
+    width: 100%;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+    gap: 32px;
+    }
+  }
 
+  &__content {
+    flex-basis: 605px;
+  }
 
-  map {
+  &__title {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    line-height: 1.5;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 16px;
+      font-weight: 900;
+      font-size: 60px;
+      text-align: left;
+      line-height: 1.3;
+    }
+  }
+
+  &__p {
+    margin-bottom: 24px;
+    color: var(--color-brand-dark);
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 42px;
+      color: var(--color-brand-dark);
+      text-align: left;
+    }
+  }
+}
+
+.fullmap {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+    flex-basis: 30%;
+    min-height: 50%;
+    flex-shrink: 0;
+    border-radius: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: block;
     flex-basis: 600px;
     min-height: 600px;
     flex-shrink: 0;
     border-radius: 16px;
   }
+}
+
+.lilmap-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.lilmap {
+  flex-basis: 100%;
+  max-height: 176px;
+  flex-grow: 1;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
