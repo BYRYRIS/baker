@@ -2,30 +2,59 @@
   padding-top: 32px;
   background-image: url("/images/footer-background.png");
   background-color: var(--color-primary-dark);
-  background-position: center;
-  background-size: cover;
+  background-position:75%;
+  background-size:cover;
   background-repeat: no-repeat;
   position: relative;
 
-  &__::before {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: "";
-    width: 180px;
-    height: 120px;
-    background-repeat: no-repeat;
-    background-image: url("/images//bread-one.png");
+  @media screen and (min-width: $desktop) {
+    background-position: center;
   }
 
-  &__::after {
-    background-image: url("/images/bread-two.png");
+  &::before {
+    content: "";
     position: absolute;
-    width: 380px;
-    height: 190px;
+    left: -8px;
+    top: 48px;
+    width: 92px;
+    height: 196px;
+    background-repeat: no-repeat;
+    background-image: url("/images//bread-one-mobile.png");
+  }
+
+  &::after {
+    background-image: url("/images/bread-two-mobile.png");
+    position: absolute;
+    width: 102px;
+    height: 90px;
     right: 0;
     bottom: 0;
     content: "";
+
+  }
+
+  @media screen and (min-width: $desktop) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: auto;
+      left: 0;
+      bottom: 0;
+      width: 180px;
+      height: 120px;
+      background-repeat: no-repeat;
+      background-image: url("/images//bread-one.png");
+    }
+  
+    &::after {
+      background-image: url("/images/bread-two.png");
+      position: absolute;
+      width: 380px;
+      height: 185px;
+      right: 0;
+      bottom: 0;
+      content: "";
+    }
   }
 
   &__flex {
@@ -61,7 +90,7 @@
     margin-bottom: 32px;
 
     img {
-      max-width: 70%;
+      max-width: 100%;
       @media screen and (min-width: $desktop) {
         max-width: none;
       }

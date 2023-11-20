@@ -1,6 +1,6 @@
 .section.contacts-section {
   padding-bottom: 0;
-  
+
   @media screen and (min-width: $desktop) {
     padding-bottom: 48px;
   }
@@ -10,9 +10,15 @@
   &__flex {
     display: block;
     width: 100%;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      gap: 32px;
+    }
+
     @media screen and (min-width: $desktop) {
       display: flex;
-    gap: 32px;
+      gap: 32px;
     }
   }
 
@@ -53,9 +59,9 @@
   display: none;
 
   @media screen and (min-width: $tablet) {
-    display: none;
-    flex-basis: 30%;
-    min-height: 50%;
+    display: block;
+    flex-basis: 50%;
+    height: auto;
     flex-shrink: 0;
     border-radius: 16px;
   }

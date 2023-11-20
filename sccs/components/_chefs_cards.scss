@@ -2,24 +2,17 @@
   align-items: flex-start;
   display: flex;
   gap: 30px;
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    gap: 30px;
-  }
 
   &__chef-photo {
     border-radius: 4px 4px 4px 200px;
     box-shadow: -16px 16px 0 0 var(--color-primary-light),
       -16px 16px 0 1px var(--color-secondary-dark);
     max-width: 50%;
-    flex: 50%;
-
     @media screen and (min-width: $tablet) {
       border-radius: 4px 4px 4px 200px;
       box-shadow: -16px 16px 0 0 var(--color-primary-light),
         -16px 16px 0 1px var(--color-secondary-dark);
-      max-width: none;
-      flex: none;
+      max-width: 45%;
     }
 
     @media screen and (min-width: $desktop) {
@@ -27,7 +20,7 @@
       box-shadow: -16px 16px 0 0 var(--color-primary-light),
         -16px 16px 0 1px var(--color-secondary-dark);
       max-width: none;
-      flex: none;
+
     }
   }
 
@@ -37,7 +30,7 @@
     line-height: 36px;
     text-align: left;
 
-    @media screen and (min-width) {
+    @media screen and (min-width: $desktop) {
       margin-bottom: 16px;
       font-size: 40;
       font-weight: 600;
@@ -60,7 +53,6 @@
 
   &__chef-text {
     max-width: 330px;
-
     font-size: 14px;
     font-weight: 300;
     line-height: 21px;
@@ -68,10 +60,10 @@
     text-align: left;
 
     @media screen and (min-width: $tablet) {
-      max-width: 330px;
+      max-width: 162px;
 
-      font-size: 18px;
-      font-weight: 400;
+      font-size: 14px;
+      font-weight: 300;
       line-height: 1.5;
       text-align: left;
     }
